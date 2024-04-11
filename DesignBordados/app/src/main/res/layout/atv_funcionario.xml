@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AtvFuncionario">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:contextClickable="false" />
+
+        <Button
+            android:id="@+id/btnOS"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#FFA500"
+            android:insetLeft="50dp"
+            android:insetRight="50dp"
+            android:text="ORDEM DE SERVIÇO"
+            android:textAlignment="center"
+            android:textColor="#616161"
+            android:textStyle="bold"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <Button
+            android:id="@+id/btnfc"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#00CED1"
+            android:insetLeft="50dp"
+            android:insetRight="50dp"
+            android:text="CLIENTES CADASTRADOS"
+            android:textColor="#616161"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logoDb"
+            android:layout_width="308dp"
+            android:layout_height="189dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="TODO"
+            app:srcCompat="@drawable/logo"
+            tools:ignore="ContentDescription,HardcodedText,InefficientWeight" />
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
